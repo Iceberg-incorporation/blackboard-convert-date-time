@@ -1,7 +1,7 @@
 
 function am_or_pm(date) {
     var date_obj = new Date(date);
-    var hours = date_obj.getHours();
+    var hours = date_obj.getHours()+7;
     var morn_or_night;
     // I wouldn't do this in production, but this is to make my logic really clear - I would probably use a conditional operator here. 
     // Handling Midnight
